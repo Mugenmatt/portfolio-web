@@ -26,19 +26,18 @@ const SectionComponent = ({ component, colSpan  }) => {
   
   return (
     <section className={` ${colSpanClass} sm:col-span-1`}>
-        <motion.div
+        <motion.div 
+            drag
+            dragSnapToOrigin={true}
             initial={{ opacity: 1, scale: 1 }}
             animate={{ opacity: [0, 0.5, 1], scale: 1 }}
             transition={{ duration: 0.1 }}
-            whileTap={{
-                background: randomColor(),
-                transition: { duration: 0.1 },
-            }}
+            whileTap={{ rotateX: 360 }}
             whileHover={{ zIndex: 1000, gridColumn: "3", background: randomColor(), rotate: randomRotation(), scale: 1.1, cursor: 'pointer', boxShadow: '5px 5px 15px #c2c2c2, -0px -0px 15px #c2c2c2' }}
             className={`
-                    flex flex-col rounded-xl bg-gradient-to-r from-[#303030] 
-                    to-[#101010] transition overflow-hidden relative
-                `}
+                flex flex-col rounded-xl bg-gradient-to-r from-[#303030] 
+                to-[#101010] transition overflow-hidden relative
+            `}
             >
             <div className="p-2 h-245px min-h-[245px] max-h-[245px]">
                 { component }
