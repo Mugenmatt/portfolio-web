@@ -1,4 +1,8 @@
+import InfiniteCarousel from "./InfiniteCarousel"
+
 const keywords = [
+    'Full Stack',
+    'Frontend',
     'HTML', 
     'CSS', 
     'JavaScript', 
@@ -9,21 +13,34 @@ const keywords = [
     'SQL',
     'Git', 
     'Figma',
+    'Librerias Externas',
 ]
 
 export const Keywords = () => {
   return (
-    <>
-    <h2 className="text-3xl font-bold mb-4 text-center">Keywords</h2>
-        <ul className="list-none flex flex-wrap gap-2 justify-center">
+    <div className="overflow-hidden">
+        <h2 className="text-3xl font-bold mb-8 text-center">Keywords</h2>
+
+        <InfiniteCarousel duration={100}>
             {
-                keywords.map((keyword, idx) => (
-                    <div className="p-2 mb-1 bg-black opacity-80 hover:text-black hover:bg-white hover:opacity-100 rounded-md " key={idx}>
-                        <li className="text-xl select-none" >{keyword}</li>
+                [...keywords, ...keywords].map((keyword, idx) => (
+                    <div className="p-2 mb-1 bg-black opacity-80 hover:text-black hover:bg-white hover:opacity-100 rounded-md" key={idx}>
+                        <span className="text-xl select-none" >{keyword}</span>
                     </div>
                 ))
             }
-        </ul>
-    </>
+        </InfiniteCarousel>
+
+        <InfiniteCarousel duration={100} shift="-40%">
+            {
+                [...keywords, ...keywords].map((keyword, idx) => (
+                    <div className="p-2 mb-1 bg-black opacity-80 hover:text-black hover:bg-white hover:opacity-100 rounded-md" key={idx}>
+                        <span className="text-xl select-none" >{keyword}</span>
+                    </div>
+                ))
+            }
+        </InfiniteCarousel>
+
+    </div>
   )
 }
