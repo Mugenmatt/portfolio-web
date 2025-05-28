@@ -9,7 +9,7 @@ const keywords = [
     'Figma',
     'SQL',
     'React.js', 
-    'Librerias Externas',
+    'External Libraries',
     'Redux', 
     'Full Stack',
     'Axios',
@@ -20,7 +20,7 @@ export const Keywords = () => {
   return (
     <div className="overflow-hidden">
         <h2 className="text-3xl font-bold mb-8 text-center">Keywords</h2>
-
+        
         <InfiniteCarousel duration={150} initAndEnd="0%" shift="-30%">
             {
                 [...keywords, ...keywords].map((keyword, idx) => (

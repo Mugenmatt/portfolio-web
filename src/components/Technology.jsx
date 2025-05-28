@@ -13,7 +13,7 @@ import npmLogo from '../assets/NPM.svg'
 import reduxLogo from '../assets/Redux.svg'
 import InfiniteCarousel from './InfiniteCarousel'
 
-export const Skills = () => {
+export const Technology = () => {
   return (
     <div className='h-full w-full flex flex-col items-center justify-center overflow-hidden'>
       <div>
@@ -26,12 +26,12 @@ export const Skills = () => {
           <img src={jsLogo} className="w-20" alt="javascript" />
           <img src={tsLogo} className="w-20" alt="typescript" />
           <img src={reactLogo} className="w-20" alt="react" />
+          <img src={viteLogo} className="w-20" alt="vite" />
           <img src={reduxLogo} className="w-20" alt="redux" />
           <img src={nextLogo} className="w-20" alt="my sql" />
           <img src={nodeLogo} className="w-20" alt="node" />
           <img src={mySqlLogo} className="w-20" alt="mysql" />
           <img src={mongoLogo} className="w-20" alt="mongo db" />
-          <img src={viteLogo} className="w-20" alt="vite" />
           <img src={gitLogo} className="w-20" alt="git" />
           <img src={npmLogo} className="w-20" alt="npm" />
         </InfiniteCarousel>

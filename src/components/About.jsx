@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 
 export const About = () => {
   return (
@@ -16,7 +17,7 @@ export const About = () => {
                 <span className="text-md">Available To Work</span>
               </div>
               <h1 className="text-3xl">Matías Godoy</h1>
-              <span className="text-md">Im a Full-Stack Developer</span>
+              <span className="text-md">Full Stack Developer</span>
             </div>
           </div>
 
@@ -24,7 +25,10 @@ export const About = () => {
           <div className="w-1/3 flex justify-end items-top">
             <div className="flex items-start">
               <span>Resume</span>
-              <span className="text-3xl">📋</span>
+              <motion.span
+                className="text-3xl cursor-pointer"
+                whileHover={{scale: 2}}
+              >📋</motion.span>
             </div>
           </div>
 
@@ -43,7 +47,7 @@ export const About = () => {
 }
 
 const Pill = ({content, icon}) => (
-  <div className="p-2 m-2 mt-5 inline rounded-md bg-black opacity-80 hover:text-black hover:bg-white hover:opacity-100">
+  <div className="p-2 m-2 mt-5 inline cursor-pointer rounded-md bg-black opacity-80 hover:text-black hover:bg-white hover:opacity-100">
     {icon && <span className="mr-1">{icon}</span>}
     <span>{content}</span>
   </div>
