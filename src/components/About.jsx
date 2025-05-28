@@ -38,7 +38,12 @@ export const About = () => {
         <div className="w-full grid grid-cols-4 gap-2 text-center">
           {
             pillsInfo.map(pill => (
-              <Pill key={pill.content} content={pill.content} icon={pill.icon} />
+              <Pill 
+                key={pill.content} 
+                content={pill.content} 
+                icon={pill.icon} 
+                onClick={pill.onClick} 
+              />
             ))
           }
         </div>
@@ -46,16 +51,20 @@ export const About = () => {
   )
 }
 
-const Pill = ({content, icon}) => (
-  <div className="p-2 m-2 mt-5 inline cursor-pointer rounded-md bg-black opacity-80 hover:text-black hover:bg-white hover:opacity-100">
+const Pill = ({ content, icon, onClick }) => (
+  <div
+    onClick={onClick}
+    className="p-2 m-2 mt-5 inline cursor-pointer rounded-md bg-black opacity-80 hover:text-black hover:bg-white hover:opacity-100"
+  >
     {icon && <span className="mr-1">{icon}</span>}
     <span>{content}</span>
   </div>
-)
+);
+
 
 const pillsInfo = [
-  { icon: '😀', content: 'Argentina' },
-  { icon: '😀', content: 'Spanish & English' },
-  { icon: '😀', content: 'Full Stack Dev' },
-  { icon: '😀', content: 'Udemy & Youtube' },
-]
+  { icon: '😀', content: 'Argentina', onClick: () => alert('Argentina') },
+  { icon: '🗣️', content: 'Spanish & English', onClick: () => alert('Languages') },
+  { icon: '💻', content: 'Full Stack Dev', onClick: () => alert('Role') },
+  { icon: '🎓', content: 'Udemy & Youtube', onClick: () => alert('Self-taught') },
+];
