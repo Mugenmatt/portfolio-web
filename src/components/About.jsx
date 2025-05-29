@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import argentinaAudio from '../assets/argentinaAudio.mp3'
 
 export const About = () => {
   return (
@@ -63,7 +64,11 @@ const Pill = ({ content, icon, onClick }) => (
 
 
 const pillsInfo = [
-  { icon: '😀', content: 'Argentina', onClick: () => alert('Argentina') },
+  { icon: '😀', content: 'Argentina', onClick: () => {
+      const audio = new Audio(argentinaAudio);
+      audio.play();
+    },
+  },
   { icon: '🗣️', content: 'Spanish & English', onClick: () => alert('Languages') },
   { icon: '💻', content: 'Full Stack Dev', onClick: () => alert('Role') },
   { icon: '🎓', content: 'Udemy & Youtube', onClick: () => alert('Self-taught') },

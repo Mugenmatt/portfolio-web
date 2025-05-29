@@ -15,8 +15,8 @@ function App() {
 
     // Escucha de evento al hacer resize
     window.addEventListener('resize', handleResize);
-      return () => window.removeEventListener('resize', handleResize);
-    }, []);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   return (
     <>

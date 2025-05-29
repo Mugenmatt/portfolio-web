@@ -6,6 +6,7 @@ import { Keywords } from '../components/Keywords';
 import { LastJob } from '../components/LastJob';
 import SectionComponent from '../components/SectionComponent';
 import { Technology } from '../components/Technology';
+import { Links } from '../components/Links';
 
 export default function PortfolioDesktop() {
 
@@ -23,7 +24,7 @@ export default function PortfolioDesktop() {
         <SectionComponent colSpan={2} component={<Experience />} />
         <SectionComponent colSpan={1} component={<h1>falta</h1>} />
         <SectionComponent colSpan={2} component={<About />} />
-        <SectionComponent colSpan={1} component={<h1>falta</h1>} />
+        <SectionComponent colSpan={1} component={<Links />} />
         <SectionComponent colSpan={2} component={<Education />} />
         <SectionComponent colSpan={1} component={<Technology />} />
         <SectionComponent colSpan={1} component={<Contact />} />
