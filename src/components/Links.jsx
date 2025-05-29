@@ -1,5 +1,6 @@
 import linkedinLogo from '../assets/LinkedIn.svg'
 import githubLogo from '../assets/GitHub.svg'
+import sandboxLogo from '../assets/Sandbox.svg'
 
 export const Links = () => {
   return (
@@ -11,6 +12,7 @@ export const Links = () => {
         <div className="flex justify-evenly items-center">
           <a href='https://www.linkedin.com/in/matias-godoy/' target='_blank' className='rounded-xl flex items-center justify-center w-25'><img src={ linkedinLogo } className="" alt="html" /></a>
           <a href='https://github.com/Mugenmatt' target='_blank' className='bg-white rounded-xl flex items-center justify-center w-25'><img src={ githubLogo } className="" alt="html" /></a>
+          <a href='https://codesandbox.io/dashboard/recent' target='_blank' className='bg-white rounded-xl flex items-center justify-center w-25'><img src={ sandboxLogo } className="" alt="html" /></a>
         </div>
       </div>
     </div>

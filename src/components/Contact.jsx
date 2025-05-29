@@ -11,7 +11,13 @@ export const Contact = () => {
 
           <p className="my-4 text-[#ffffff99]">Let's Work Together</p>
 
-          <button className="cursor-pointer w-2/3 py-2 rounded-xl mb-2 bg-black opacity-80 hover:text-black hover:bg-white">Email Me</button>
+          <a 
+            href="mailto:matigodoy93@hotmail.com?subject=¡Hola Matías! / Hi Matías!"
+            className="text-center cursor-pointer w-2/3 py-2 rounded-xl mb-2 bg-black opacity-80 hover:text-black hover:bg-white text-white"
+          >
+            Email Me
+          </a>
+
 
         </div>
 
