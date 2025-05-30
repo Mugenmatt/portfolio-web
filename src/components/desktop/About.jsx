@@ -159,10 +159,10 @@ export const About = ({ isMobile }) => {
 const Pill = ({ content, icon, onClick, isDisabled }) => (
   <div
     onClick={onClick}
-    className={`p-2 m-2 mt-5 lg:p-0 xl:p-2 lg:flex lg:justify-center lg:items-center inline cursor-pointer rounded-md bg-black opacity-80 hover:text-black hover:bg-white hover:opacity-100 ${!isDisabled && 'pointer-events-none opacity-50'}`}
+    className={`2xl:p-2 2xl:mt-5 lg:flex lg:justify-center lg:items-center inline cursor-pointer rounded-md bg-black opacity-80 hover:text-black hover:bg-white hover:opacity-100 ${!isDisabled && 'pointer-events-none opacity-50'}`}
   >
-    {icon && <span className="mr-1 lg:hidden">{icon}</span>}
-    <span>{content}</span>
+    {icon && <span className="mr-1 lg:hidden 2xl:inline">{icon}</span>}
+    <span className='text-baseline'>{content}</span>
   </div>
 );
 
@@ -222,17 +222,11 @@ const pillsInfo = (playArgentinaAudio) => [
       <span className="text-6xl" key="10">🪕</span>,
       <span className="text-6xl" key="11">🎺</span>,
       <span className="text-6xl" key="12">🎻</span>,
-      <span className="text-6xl" key="13">🪘</span>,
       <span className="text-6xl" key="14">📻</span>,
-      <span className="text-6xl" key="15">🎚️</span>,
       <span className="text-6xl" key="16">🎛️</span>,
-      <span className="text-6xl" key="17">🪗</span>,
       <span className="text-6xl" key="18">🔊</span>,
       <span className="text-6xl" key="19">🔉</span>,
       <span className="text-6xl" key="20">🎙️</span>,
-      <span className="text-6xl" key="21">🧑‍🎤</span>,
-      <span className="text-6xl" key="22">👨‍🎤</span>,
-      <span className="text-6xl" key="23">👩‍🎤</span>,
       <span className="text-6xl" key="24">💽</span>,
       <span className="text-6xl" key="25">💿</span>,
       <span className="text-6xl" key="26">📀</span>,

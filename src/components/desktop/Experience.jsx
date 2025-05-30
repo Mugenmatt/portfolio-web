@@ -47,14 +47,14 @@ export const Experience = ({ isMobile }) => {
 
 const NumberOf = ({ numberOf, icon, title, extraCss }) => {
   return (
-    <div className={`flex flex-col items-center justify-center bg-gradient-to-r from-[#101010b0] to-[#303030b0] rounded-xl p-3 w-[200px] h-[150px] ${extraCss}`}>
+    <div className={`flex flex-col items-center justify-center bg-gradient-to-r from-[#101010b0] to-[#303030b0] rounded-xl p-3 w-[150px] h-[140px] 2xl:w-[200px] 2xl:h-[150px] ${extraCss}`}>
       <div className="flex items-center justify-center mb-2">
-        <span className="mr-1 text-6xl">{numberOf}</span>
-        <span className="text-6xl">+</span>
+        <span className="mr-1 text-5xl 2xl:text-6xl">{numberOf}</span>
+        <span className="text-5xl 2xl:text-6xl">+</span>
       </div>
       <div className="flex items-center justify-center">
-        {icon ? <span className="mr-2 lg:hidden xl:inline">🚩</span> : <span className="mr-2 lg:hidden xl:inline">🚩</span>}
-        <span className="">{title}</span>
+        {icon ? <span className="mr-2 hidden 2xl:inline">🚩</span> : <span className="mr-2 hidden 2xl:inline">🚩</span>}
+        <span className="text-md 2xl:text-md text-center">{title}</span>
       </div>
     </div>
   )

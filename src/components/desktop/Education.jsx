@@ -52,38 +52,38 @@ export const Education = ({ isMobile }) => {
           <div className="flex items-center justify-evenly">
             <motion.div  
                 whileHover={{ scale: 1.1 }} className="flex flex-col items-center justify-center">
-              <span className="xl:inline xl:text-2xl lg:hidden">Learning</span>
+              <span className="2xl:inline 2xl:text-2xl lg:hidden">Learning</span>
               <a
                 href='https://www.youtube.com/@huxnwebdev/playlists'
                 target='_blank'
-              ><img src={logoYoutube} alt="digital house" className='w-25 h-25 my-2 rounded-full cursor-pointer' />
+              ><img src={logoYoutube} alt="digital house" className='w-30 h-30 2xl:w-25 my-2 rounded-full cursor-pointer' />
               </a>
             </motion.div>
             <motion.div  
                 whileHover={{ scale: 1.1 }} className="flex flex-col items-center justify-center">
-              <span className="xl:inline xl:text-2xl lg:hidden">Full Stack React-Node</span>
+              <span className="2xl:inline 2xl:text-2xl lg:hidden">Full Stack React-Node</span>
               <a
                 href='https://www.digitalhouse.com/ar'
                 target='_blank'
-              ><img src={logoDH} alt="digital house" className='w-25 h-25 my-2 rounded-full cursor-pointer' />
+              ><img src={logoDH} alt="digital house" className='w-25 h-25 2xl:w-25 my-2 rounded-full cursor-pointer' />
               </a>
             </motion.div>
             <motion.div  
                 whileHover={{ scale: 1.1 }} className="flex flex-col items-center justify-center">
-              <span className="xl:inline xl:text-2xl lg:hidden">Advanced React</span>
+              <span className="2xl:inline 2xl:text-2xl lg:hidden">Advanced React</span>
               <a 
                 href='https://www.digitalhouse.com/ar'
                 target='_blank'
-              ><img src={acamica} alt="acamica" className='w-25 h-25 my-2 rounded-full cursor-pointer' />
+              ><img src={acamica} alt="acamica" className='w-25 h-25 2xl:w-25 my-2 rounded-full cursor-pointer' />
               </a>
             </motion.div>
             <motion.div 
                 whileHover={{ scale: 1.1 }}  className="flex flex-col items-center justify-center">
-              <span className="xl:inline xl:text-2xl lg:hidden">Acceleration</span>
+              <span className="2xl:inline 2xl:text-2xl lg:hidden">Acceleration</span>
               <a 
                 href='https://www.alkemy.org/'
                 target='_blank'
-              ><img src={alkemy} alt="alkemy" className='w-25 h-25 my-2 rounded-full cursor-pointer' />
+              ><img src={alkemy} alt="alkemy" className='w-25 h-25 2xl:w-25 my-2 rounded-full cursor-pointer' />
               </a>
             </motion.div>
           </div>
