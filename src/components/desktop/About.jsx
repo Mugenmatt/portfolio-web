@@ -1,22 +1,22 @@
 import { motion } from 'framer-motion'
 import { useState } from 'react'
-import argentinaAudio from '../assets/argentinaAudio.mp3'
-import argentinaFlag from '../assets/argentina-flag.png'
-import eeuuFlag from '../assets/eeuu-flag.png'
-import htmlLogo from '../assets/HTML5.svg'
-import cssLogo from '../assets/CSS3.svg'
-import jsLogo from '../assets/JavaScript.svg'
-import tsLogo from '../assets/TypeScript.svg'
-import reactLogo from '../assets/React.svg'
-import nextLogo from '../assets/Next.svg'
-import mySqlLogo from '../assets/MySQL.svg'
-import nodeLogo from '../assets/Node.svg'
-import mongoLogo from '../assets/MongoDB.svg'
-import viteLogo from '../assets/Vite.svg'
-import gitLogo from '../assets/Git.svg'
-import npmLogo from '../assets/NPM.svg'
-import reduxLogo from '../assets/Redux.svg'
-import yo from '../assets/yo.png'
+import argentinaAudio from '../../assets/argentinaAudio.mp3'
+import argentinaFlag from '../../assets/argentina-flag.png'
+import eeuuFlag from '../../assets/eeuu-flag.png'
+import htmlLogo from '../../assets/HTML5.svg'
+import cssLogo from '../../assets/CSS3.svg'
+import jsLogo from '../../assets/JavaScript.svg'
+import tsLogo from '../../assets/TypeScript.svg'
+import reactLogo from '../../assets/React.svg'
+import nextLogo from '../../assets/Next.svg'
+import mySqlLogo from '../../assets/MySQL.svg'
+import nodeLogo from '../../assets/Node.svg'
+import mongoLogo from '../../assets/MongoDB.svg'
+import viteLogo from '../../assets/Vite.svg'
+import gitLogo from '../../assets/Git.svg'
+import npmLogo from '../../assets/NPM.svg'
+import reduxLogo from '../../assets/Redux.svg'
+import yo from '../../assets/yo.png'
 
 const ArgentinaFlagIcon = () => (<img src={argentinaFlag} alt='Bandera Argentina' className='w-20 h-20' />)
 const EeuuFlagIcon = () => (<img src={eeuuFlag} alt='Bandera Estadounidense' className='w-20 h-20' />)
@@ -35,7 +35,7 @@ const GitLogoIcon = () => (<img src={gitLogo} alt='Git icono' className='w-20 h-
 const NpmLogoIcon = () => (<img src={npmLogo} alt='NPM icono' className='w-20 h-20' />)
 
 
-export const About = () => {
+export const About = ({ isMobile }) => {
   const [fallingIcons, setFallingIcons] = useState([]);
   const [canPlayAudio, setCanPlayAudio] = useState(true);
 
@@ -60,6 +60,33 @@ export const About = () => {
     }
   };
 
+  // =============== MOBILE ===============
+  if(isMobile) {
+    return (
+      <motion.div
+  className="flex flex-col items-center text-center gap-6 px-4 sm:px-8"
+  initial={{ opacity: 0, y: 30 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6 }}
+>
+  <div className="w-28 h-28 sm:w-32 sm:h-32 md:w-50 md:h-50 rounded-full bg-[#303030] overflow-hidden">
+    <img src={yo} alt="Mi foto" className="w-full h-full object-cover" />
+  </div>
+
+  <div>
+    <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white">Matías Godoy</h1>
+    <p className="text-sm sm:text-base md:text-xl text-gray-300 mb-1">Full Stack Developer</p>
+    <div className="flex items-center justify-center">
+      <span className="text-xs sm:text-sm mr-1 text-green-400 animate-pulse drop-shadow-[0_0_5px_#22c55e]">🟢</span>
+      <span className="text-xs sm:text-sm md:text-lg text-white">Available To Work</span>
+    </div>
+  </div>
+</motion.div>
+
+    )
+  }
+
+  // =============== DESKTOP ===============
   return (
     <div className="relative flex flex-col items-center justify-center h-full w-full p-4 text-white rounded-xl overflow-hidden">
         

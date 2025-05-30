@@ -1,5 +1,5 @@
 import {motion} from 'framer-motion';
-import error from '../assets/error.gif'
+import error from '../../assets/error.gif'
 
 export const ANiceProject = () => {
   return (

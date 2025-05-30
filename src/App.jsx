@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import './App.css'
 import PortfolioDesktop from './pages/PortfolioDesktop'
-import { PortfolioMobile } from './pages/PortfolioMobile';
 
 function App() {
   // Desktop o Mobile
@@ -18,11 +17,7 @@ function App() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  return (
-    <>
-      {isMobile ? <PortfolioMobile /> : <PortfolioDesktop />}
-    </>
-  )
+  return <PortfolioDesktop isMobile={isMobile} />
 }
 
 export default App

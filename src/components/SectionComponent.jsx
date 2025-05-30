@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { useState } from 'react';
 
-const SectionComponent = ({ component, colSpan  }) => {
+const SectionComponent = ({ component, colSpan }) => {
     const [colSpanNumber, setColSpanNumber] = useState(colSpan);
 
     const colSpanClass = {

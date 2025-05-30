@@ -1,6 +1,6 @@
-import linkedinLogo from '../assets/LinkedIn.svg'
-import githubLogo from '../assets/GitHub.svg'
-import sandboxLogo from '../assets/Sandbox.svg'
+import linkedinLogo from '../../assets/LinkedIn.svg'
+import githubLogo from '../../assets/GitHub.svg'
+import sandboxLogo from '../../assets/Sandbox.svg'
 
 export const Links = () => {
   return (
