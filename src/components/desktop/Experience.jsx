@@ -35,7 +35,7 @@ export const Experience = ({ isMobile }) => {
   // =============== DESKTOP ===============
   return (
     <div className="overflow-hidden">
-        <h2 className="text-3xl font-bold mb-4 text-center">Experience</h2>
+        <h2 className="text-3xl font-bold mb-4 text-center lg:text-2xl">Experience</h2>
         <div className="flex items-center justify-evenly">
           <NumberOf numberOf={'03'} title={'Work Experience'} extraCss="mr-6" />
           <NumberOf numberOf={'06'} title={'Real Projects'} extraCss="mr-6" />
@@ -53,7 +53,7 @@ const NumberOf = ({ numberOf, icon, title, extraCss }) => {
         <span className="text-6xl">+</span>
       </div>
       <div className="flex items-center justify-center">
-        {icon ? <span className="mr-2">🚩</span> : <span className="mr-2">🚩</span>}
+        {icon ? <span className="mr-2 lg:hidden xl:inline">🚩</span> : <span className="mr-2 lg:hidden xl:inline">🚩</span>}
         <span className="">{title}</span>
       </div>
     </div>

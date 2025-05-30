@@ -50,7 +50,7 @@ export const Technology = ({ isMobile }) => {
     <div className='h-full w-full flex flex-col items-center justify-center overflow-hidden'>
       <div>
         <div className="h-1/3 w-full">
-          <h2 className="text-3xl font-bold text-center mb-11">Tools & Technologies</h2>
+          <h2 className="text-3xl font-bold text-center mb-11 lg:text-2xl">Tools & Technologies</h2>
         </div>
         <InfiniteCarousel duration={30} shift="-40%">
           <img src={htmlLogo} className="w-20" alt="html" />

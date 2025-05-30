@@ -78,7 +78,7 @@ export const About = ({ isMobile }) => {
     <p className="text-sm sm:text-base md:text-xl text-gray-300 mb-1">Full Stack Developer</p>
     <div className="flex items-center justify-center">
       <span className="text-xs sm:text-sm mr-1 text-green-400 animate-pulse drop-shadow-[0_0_5px_#22c55e]">🟢</span>
-      <span className="text-xs sm:text-sm md:text-lg text-white">Available To Work</span>
+      <span className="text-xs sm:text-sm lg:text-lg text-white">Available To Work</span>
     </div>
   </div>
 </motion.div>
@@ -97,7 +97,7 @@ export const About = ({ isMobile }) => {
             <img
               src={yo}
               alt="Me"
-              className="w-35 h-30"
+              className="xl:w-45 xl:h-30 lg:w-50 lg:h-30"
             />
           </div>
           <div className="w-full">
@@ -113,9 +113,9 @@ export const About = ({ isMobile }) => {
         {/* CV LINK */}
         <div className="w-1/3 flex justify-end items-top">
           <div className="flex items-start">
-            <span>Resume</span>
+            <span className='md:text-md xl:text-lg'>Resume</span>
             <motion.span
-              className="text-3xl cursor-pointer"
+              className="text-3xl cursor-pointer "
               whileHover={{ scale: 2 }}
             >
               📋
@@ -159,9 +159,9 @@ export const About = ({ isMobile }) => {
 const Pill = ({ content, icon, onClick, isDisabled }) => (
   <div
     onClick={onClick}
-    className={`p-2 m-2 mt-5 inline cursor-pointer rounded-md bg-black opacity-80 hover:text-black hover:bg-white hover:opacity-100 ${!isDisabled && 'pointer-events-none opacity-50'}`}
+    className={`p-2 m-2 mt-5 lg:p-0 xl:p-2 lg:flex lg:justify-center lg:items-center inline cursor-pointer rounded-md bg-black opacity-80 hover:text-black hover:bg-white hover:opacity-100 ${!isDisabled && 'pointer-events-none opacity-50'}`}
   >
-    {icon && <span className="mr-1">{icon}</span>}
+    {icon && <span className="mr-1 lg:hidden">{icon}</span>}
     <span>{content}</span>
   </div>
 );

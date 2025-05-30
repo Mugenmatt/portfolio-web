@@ -47,12 +47,12 @@ export const Education = ({ isMobile }) => {
   // =============== DESKTOP ===============
   return (
     <div className="overflow-hidden">
-        <h2 className="text-3xl font-bold mb-4 text-center">Education</h2>
+        <h2 className="text-3xl font-bold mb-4 text-center lg:text-2xl">Education</h2>
         <MotionConfig transition={{duration: 0.1, ease: "easeInOut"}}>
           <div className="flex items-center justify-evenly">
             <motion.div  
                 whileHover={{ scale: 1.1 }} className="flex flex-col items-center justify-center">
-              <span className="text-2xl">Youtube</span>
+              <span className="xl:inline xl:text-2xl lg:hidden">Learning</span>
               <a
                 href='https://www.youtube.com/@huxnwebdev/playlists'
                 target='_blank'
@@ -61,7 +61,7 @@ export const Education = ({ isMobile }) => {
             </motion.div>
             <motion.div  
                 whileHover={{ scale: 1.1 }} className="flex flex-col items-center justify-center">
-              <span className="text-2xl">Full Stack React-Node</span>
+              <span className="xl:inline xl:text-2xl lg:hidden">Full Stack React-Node</span>
               <a
                 href='https://www.digitalhouse.com/ar'
                 target='_blank'
@@ -70,7 +70,7 @@ export const Education = ({ isMobile }) => {
             </motion.div>
             <motion.div  
                 whileHover={{ scale: 1.1 }} className="flex flex-col items-center justify-center">
-              <span className="text-2xl">Advanced React</span>
+              <span className="xl:inline xl:text-2xl lg:hidden">Advanced React</span>
               <a 
                 href='https://www.digitalhouse.com/ar'
                 target='_blank'
@@ -79,7 +79,7 @@ export const Education = ({ isMobile }) => {
             </motion.div>
             <motion.div 
                 whileHover={{ scale: 1.1 }}  className="flex flex-col items-center justify-center">
-              <span className="text-2xl">Acceleration</span>
+              <span className="xl:inline xl:text-2xl lg:hidden">Acceleration</span>
               <a 
                 href='https://www.alkemy.org/'
                 target='_blank'

@@ -42,7 +42,7 @@ const contactLinks = [
   return (
     <>
 
-        <div className="flex flex-col justify-center items-center overflow-hidden">
+        <div className="flex flex-col justify-center items-center overflow-hidden lg:text-2xl">
           
           <span className="text-3xl flex justify-center my-2">😀</span>
 
