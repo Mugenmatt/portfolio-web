@@ -1,4 +1,4 @@
-import InfiniteCarousel from "../InfiniteCarousel"
+import InfiniteCarousel from "./InfiniteCarousel"
 
 const keywords = [
     'CSS', 

@@ -1,13 +1,13 @@
 import { motion } from 'framer-motion'
-import { About } from '../components/desktop/About';
-import { Contact } from '../components/desktop/Contact';
-import { Education } from '../components/desktop/Education';
-import { Experience } from '../components/desktop/Experience';
-import { Keywords } from '../components/desktop/Keywords';
-import { LastJob } from '../components/desktop/LastJob';
-import { Technology } from '../components/desktop/Technology';
-import { Links } from '../components/desktop/Links';
-import { ANiceProject } from '../components/desktop/ANiceProject';
+import { About } from '../components/About';
+import { Contact } from '../components/Contact';
+import { Education } from '../components/Education';
+import { Experience } from '../components/Experience';
+import { Keywords } from '../components/Keywords';
+import { LastJob } from '../components/LastJob';
+import { Technology } from '../components/Technology';
+import { Links } from '../components/Links';
+import { ANiceProject } from '../components/ANiceProject';
 import SectionComponent from '../components/SectionComponent';
 
 export default function PortfolioDesktop({ isMobile }) {

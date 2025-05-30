@@ -1,8 +1,8 @@
 import { motion, MotionConfig } from 'framer-motion'
-import logoDH from '../../assets/digitalhouse.png'
-import acamica from '../../assets/acamica.png'
-import alkemy from '../../assets/alkemy.png'
-import logoYoutube from '../../assets/youtube.png'
+import logoDH from '../assets/digitalhouse.png'
+import acamica from '../assets/acamica.png'
+import alkemy from '../assets/alkemy.png'
+import logoYoutube from '../assets/youtube.png'
 
 export const Education = ({ isMobile }) => {
 

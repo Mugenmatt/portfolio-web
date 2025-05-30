@@ -1,4 +1,4 @@
-import logoSH from '../../assets/logo-SH.webp'
+import logoSH from '../assets/logo-SH.webp'
 
 export const LastJob = () => {
   return (

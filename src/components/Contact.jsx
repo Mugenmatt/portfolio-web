@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
-import linkedinLogo from '../../assets/LinkedIn.svg'
-import githubLogo from '../../assets/GitHub.svg'
-import sandboxLogo from '../../assets/Sandbox.svg'
+import linkedinLogo from '../assets/LinkedIn.svg'
+import githubLogo from '../assets/GitHub.svg'
+import sandboxLogo from '../assets/Sandbox.svg'
 
 export const Contact = ({ isMobile }) => {
 
