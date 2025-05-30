@@ -56,7 +56,7 @@ export const Education = ({ isMobile }) => {
               <a
                 href='https://www.youtube.com/@huxnwebdev/playlists'
                 target='_blank'
-              ><img src={logoYoutube} alt="digital house" className='w-30 h-30 2xl:w-25 rounded-full cursor-pointer' />
+              ><img src={logoYoutube} alt="digital house" className='w-30 h-30 rounded-full cursor-pointer' />
               </a>
             </motion.div>
             <motion.div  

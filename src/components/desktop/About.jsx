@@ -17,6 +17,7 @@ import gitLogo from '../../assets/Git.svg'
 import npmLogo from '../../assets/NPM.svg'
 import reduxLogo from '../../assets/Redux.svg'
 import yo from '../../assets/yo.png'
+import curriculum from '../../../public/React-Frontend_Matias-Godoy_english.pdf'
 
 const ArgentinaFlagIcon = () => (<img src={argentinaFlag} alt='Bandera Argentina' className='w-20 h-20' />)
 const EeuuFlagIcon = () => (<img src={eeuuFlag} alt='Bandera Estadounidense' className='w-20 h-20' />)
@@ -113,13 +114,14 @@ export const About = ({ isMobile }) => {
         {/* CV LINK */}
         <div className="w-1/3 flex justify-end items-top">
           <div className="flex items-start">
-            <span className='md:text-md xl:text-lg'>Resume</span>
-            <motion.span
-              className="text-3xl cursor-pointer "
-              whileHover={{ scale: 2 }}
-            >
-              📋
-            </motion.span>
+            <span className='md:text-md xl:text-lg'>Resume ➡</span>
+              <motion.span
+                className="text-3xl cursor-pointer hover:text-yellow-400 hover:drop-shadow-md transition-all duration-300"
+                whileHover={{ scale: 2 }}
+                onClick={() => window.open(curriculum, '_blank')}
+              >
+                📋
+              </motion.span>
           </div>
         </div>
       </div>
