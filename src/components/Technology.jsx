@@ -29,9 +29,19 @@ export const Technology = ({ isMobile }) => {
 
         <div className="flex flex-wrap gap-2 justify-center">
           {[
-            "HTML", "CSS", "JavaScript", "TypeScript",
-            "React", "Vite", "Redux", "Next.js",
-            "Node.js", "MySQL", "MongoDB", "Git", "Figma"
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "TypeScript",
+            "React",
+            "Vite",
+            "Redux",
+            // "Next.js",
+            "Node.js",
+            "MySQL",
+            "MongoDB",
+            "Git",
+            "Figma"
           ].map((tech, i) => (
             <span
               key={i}

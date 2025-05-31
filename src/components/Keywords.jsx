@@ -5,6 +5,7 @@ const keywords = [
     'HTML', 
     'Node.js', 
     'Frontend',
+    'Front-End',
     'JavaScript', 
     'Figma',
     'SQL',
