@@ -106,7 +106,7 @@ export const About = ({ isMobile }) => {
               <span className="text-md">Available To Work</span>
             </div>
             <h1 className="text-3xl">Matías Godoy</h1>
-            <span className="text-md">Full Stack Developer</span>
+            <span className="text-md">Frontend Developer (expanding into Full-Stack)</span>
           </div>
         </div>
 
