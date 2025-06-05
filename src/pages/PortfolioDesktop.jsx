@@ -9,6 +9,7 @@ import { Technology } from '../components/Technology';
 import { Links } from '../components/Links';
 import { ANiceProject } from '../components/ANiceProject';
 import SectionComponent from '../components/SectionComponent';
+import { Intro } from '../components/Intro';
 
 export default function PortfolioDesktop({ isMobile }) {
   
@@ -30,7 +31,7 @@ export default function PortfolioDesktop({ isMobile }) {
   return (
     // Toda la pantalla
     <div className="h-auto w-full bg-black flex items-center justify-center overflow-hidden sm:my-10 md:my-0">
-
+      <Intro />
       {/* GRILLA */}
       <div className="
         grid h-full w-full gap-3 sm:p-2 md:p-20 
