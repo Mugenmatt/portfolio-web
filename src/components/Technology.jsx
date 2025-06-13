@@ -4,10 +4,10 @@ import cssLogo from '../assets/CSS3.svg'
 import jsLogo from '../assets/JavaScript.svg'
 import tsLogo from '../assets/TypeScript.svg'
 import reactLogo from '../assets/React.png'
-import nextLogo from '../assets/Next.svg'
+// import nextLogo from '../assets/Next.svg'
 import mySqlLogo from '../assets/MySQL.svg'
 import nodeLogo from '../assets/Node.svg'
-import mongoLogo from '../assets/MongoDB.svg'
+// import mongoLogo from '../assets/MongoDB.svg'
 import viteLogo from '../assets/Vite.svg'
 import gitLogo from '../assets/Git.svg'
 import npmLogo from '../assets/NPM.svg'
@@ -39,7 +39,7 @@ export const Technology = ({ isMobile }) => {
             // "Next.js",
             "Node.js",
             "MySQL",
-            "MongoDB",
+            // "MongoDB",
             "Git",
             "Figma"
           ].map((tech, i) => (
@@ -70,10 +70,10 @@ export const Technology = ({ isMobile }) => {
           <img src={reactLogo} className="w-20" alt="react" />
           <img src={viteLogo} className="w-20" alt="vite" />
           <img src={reduxLogo} className="w-20" alt="redux" />
-          <img src={nextLogo} className="w-20" alt="my sql" />
+          {/* <img src={nextLogo} className="w-20" alt="my sql" /> */}
           <img src={nodeLogo} className="w-20" alt="node" />
           <img src={mySqlLogo} className="w-20" alt="mysql" />
-          <img src={mongoLogo} className="w-20" alt="mongo db" />
+          {/* <img src={mongoLogo} className="w-20" alt="mongo db" /> */}
           <img src={gitLogo} className="w-20" alt="git" />
           <img src={npmLogo} className="w-20" alt="npm" />
         </InfiniteCarousel>
