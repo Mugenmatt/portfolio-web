@@ -4,8 +4,8 @@ const keywords = [
     'CSS', 
     'HTML', 
     'Node.js', 
-    'Frontend',
     'Front-End',
+    'Back-End',
     'JavaScript', 
     'Figma',
     'SQL',
@@ -14,7 +14,10 @@ const keywords = [
     'Redux', 
     'Full Stack',
     'Axios',
-    'Git', 
+    'Git',
+    'Bubble',
+    'No-Code',
+    'Low-Code'
 ]
 
 export const Keywords = () => {

@@ -37,9 +37,9 @@ export const Experience = ({ isMobile }) => {
     <div className="overflow-hidden">
         <h2 className="text-3xl font-bold mb-4 text-center lg:text-2xl">Experience</h2>
         <div className="flex items-center justify-evenly">
-          <NumberOf numberOf={'03'} title={'Work Experience'} extraCss="mr-6" />
-          <NumberOf numberOf={'06'} title={'Real Projects'} extraCss="mr-6" />
-          <NumberOf numberOf={'04'} title={'Personal Experience'} />
+          <NumberOf numberOf={'04'} title={'Work Experience'} extraCss="mr-6" />
+          <NumberOf numberOf={'07'} title={'Real Projects'} extraCss="mr-6" />
+          <NumberOf numberOf={'05'} title={'Personal Experience'} />
         </div>
     </div>
   )

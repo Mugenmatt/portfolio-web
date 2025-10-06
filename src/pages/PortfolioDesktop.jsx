@@ -5,9 +5,9 @@ import { Education } from '../components/Education';
 import { Experience } from '../components/Experience';
 import { Keywords } from '../components/Keywords';
 import { LastJob } from '../components/LastJob';
+import { CurrentJob } from '../components/CurrentJob';
 import { Technology } from '../components/Technology';
 import { Links } from '../components/Links';
-import { ANiceProject } from '../components/ANiceProject';
 import SectionComponent from '../components/SectionComponent';
 import { Intro } from '../components/Intro';
 
@@ -37,10 +37,10 @@ export default function PortfolioDesktop({ isMobile }) {
         grid h-full w-full gap-3 sm:p-2 md:p-20 
         sm:grid-cols-1 md:grid-cols-4 md:grid-rows-3"
       >
-        <SectionComponent colSpan={1} component={<Keywords />} />
         <SectionComponent colSpan={1} component={<LastJob />} />
+        <SectionComponent colSpan={1} component={<CurrentJob />} />
         <SectionComponent colSpan={2} component={<Experience />} />
-        <SectionComponent colSpan={1} component={<ANiceProject />} />
+        <SectionComponent colSpan={1} component={<Keywords />} />
         <SectionComponent colSpan={2} component={<About />} />
         <SectionComponent colSpan={1} component={<Links />} />
         <SectionComponent colSpan={2} component={<Education />} />

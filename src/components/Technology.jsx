@@ -12,6 +12,7 @@ import viteLogo from '../assets/Vite.svg'
 import gitLogo from '../assets/Git.svg'
 import npmLogo from '../assets/NPM.svg'
 import reduxLogo from '../assets/Redux.svg'
+import bubbleLogo from '../assets/bubble.png'
 import InfiniteCarousel from './InfiniteCarousel'
 
 export const Technology = ({ isMobile }) => {
@@ -76,6 +77,7 @@ export const Technology = ({ isMobile }) => {
           {/* <img src={mongoLogo} className="w-20" alt="mongo db" /> */}
           <img src={gitLogo} className="w-20" alt="git" />
           <img src={npmLogo} className="w-20" alt="npm" />
+          <img src={bubbleLogo} className="w-20" alt="bubble" />
         </InfiniteCarousel>
 
       </div>
